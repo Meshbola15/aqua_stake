@@ -1,6 +1,7 @@
 .nav-section {
   width: 100%;
   padding: var(--body-padding);
+  padding-top: 20px;
 }
 
 .nav-section ul {

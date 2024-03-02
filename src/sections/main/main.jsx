@@ -1,6 +1,7 @@
 import React from "react";
 import "./main.css";
 import mainImage from "../../assets/main_image.svg";
+import { Link } from "react-router-dom";
 
 const Main = () => {
   return (
@@ -12,9 +13,9 @@ const Main = () => {
 
         <p>Easy and Uncapped staking</p>
 
-        <a href="#" className="main-btn">
+        <Link to="/page/stake" className="main-btn">
           Stake now
-        </a>
+        </Link>
       </div>
 
       <div className="main-image-container">

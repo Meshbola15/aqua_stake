@@ -24,7 +24,7 @@
 
   --base-margin: 4rem 0 4rem 0;
 
-  --body-padding: 4rem 10rem;
+  --body-padding: 4rem 10vw;
 }
 
 @media screen and (max-width: 767px) {

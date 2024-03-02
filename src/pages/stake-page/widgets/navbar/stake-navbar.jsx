@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { AiFillThunderbolt } from "react-icons/ai";
 import { BsBoxFill } from "react-icons/bs";
 import { IoCloudDownloadSharp } from "react-icons/io5";
-import { IoWallet } from "react-icons/io5";
+import { MdOutlineClose } from "react-icons/md";
 import "./stake-navbar.css";
 import navlogo from "../../../../assets/logo-big.svg";
 import { Link } from "react-router-dom";
@@ -13,10 +13,12 @@ const AquaNavbar = () => {
   return (
     <div className="aqua-stake-navbar-container">
       <div className="aqua-stake-navbar-container-right">
-        <div className="aqua-stake-navbar-logo-container">
-          <img src={navlogo} alt="" />
-          <p>Aqua Stake</p>
-        </div>
+        <Link to="/">
+          <div className="aqua-stake-navbar-logo-container">
+            <img src={navlogo} alt="" />
+            <p>Aqua Stake</p>
+          </div>
+        </Link>
       </div>
       <nav
         className={`aqua-stake-navbar-nav ${isMenuActive && "stake-navbar"}`}
@@ -44,13 +46,21 @@ const AquaNavbar = () => {
         <Link to="" className="aqua-stake-navbar-connect-btn">
           Connect wallet
         </Link>
-
-        <MdMenu
-          className="stake-menu"
-          color="white"
-          size={20}
-          onClick={() => setisMenuActive(!isMenuActive)}
-        />
+        {isMenuActive ? (
+          <MdMenu
+            className="stake-menu"
+            color="white"
+            size={20}
+            onClick={() => setisMenuActive(!isMenuActive)}
+          />
+        ) : (
+          <MdOutlineClose
+            className="stake-menu"
+            color="white"
+            size={20}
+            onClick={() => setisMenuActive(!isMenuActive)}
+          />
+        )}
       </div>
     </div>
   );

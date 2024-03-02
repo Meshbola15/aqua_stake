@@ -15,12 +15,13 @@ const FaqCard = ({ faqData }) => {
 
       <section className="FAQ">
         {faqData.map((item, index) => (
-          <div key={index} className="aqua-faq-section-main">
+          <div
+            onClick={() => FaqController(index)}
+            key={index}
+            className="aqua-faq-section-main"
+          >
             <div className="aqua-stake-faq-card-section">
-              <div
-                onClick={() => FaqController(index)}
-                className="aqua-stake-faq-card-text-header"
-              >
+              <div className="aqua-stake-faq-card-text-header">
                 <h4>{item.question}</h4>
                 {openIndex === index ? (
                   <IoIosArrowUp size={20} color="white" />
@@ -30,7 +31,11 @@ const FaqCard = ({ faqData }) => {
               </div>
               {openIndex === index && (
                 <div className="aqua-stake-faq-card-text-container">
-                  <p>{item.answer}</p>
+                  <div>
+                    {item.answer.map((item, index) => (
+                      <p>{item}</p>
+                    ))}
+                  </div>
                 </div>
               )}
             </div>

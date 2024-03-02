@@ -10,6 +10,8 @@ import cowSwap from "../../../../assets/aggre-logo.svg";
 import linch from "../../../../assets/linch.svg";
 import { RxDash } from "react-icons/rx";
 import { FiExternalLink } from "react-icons/fi";
+import FaqCard from "../../FaqCard/FAqCard";
+import { withdrawalFaqData } from "../../../../data/faqDatas";
 
 const withdrawalData = [
   {
@@ -107,7 +109,6 @@ const AquaWithdrawal = () => {
             <button className="aqua-withdrawal-main-input-logo-btn">Max</button>
           </div>
 
-
           {/* /////////////////////////////// */}
           <section className="aqua-withdrawal-main-card-container">
             <div className="aqua-withdrawal-main-card-box">
@@ -153,6 +154,7 @@ const AquaWithdrawal = () => {
             </section>
           )}
         </section>
+          <FaqCard faqData={withdrawalFaqData} />
       </section>
     </div>
   );

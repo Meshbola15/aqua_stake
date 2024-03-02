@@ -209,4 +209,12 @@ input::-webkit-inner-spin-button {
   .aqua-withdrawal-main-input-logo svg{
     font-size: 20px;
   }
+
+  .aqua-withdrawal-main-card-box-container h4{
+    font-size: 12px;
+  }
+
+ .aqua-withdrawal-main-card-box-container p{
+  font-size: 10px;
+ } 
 }

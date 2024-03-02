@@ -28,13 +28,12 @@ const AquaNavbar = () => {
           </Link>
           <Link to="wrap">
             <BsBoxFill />
-            <p>Wrap</p>
+            <p>Rewards</p>
           </Link>
           <Link to="withdrawals">
             <IoCloudDownloadSharp />
             <p>Withdrawals</p>
           </Link>
-
           <Link to="" className="aqua-stake-navbar-connect-btn-mobile">
             Connect wallet
           </Link>

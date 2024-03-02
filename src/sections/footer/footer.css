@@ -9,11 +9,10 @@
   align-items: flex-start;
   justify-content: space-between;
   gap: 100px;
-
   flex-wrap: wrap;
 }
 .footer-section-1 {
-  max-width: 30%;
+  width: 30%;
 }
 
 .footer-section-1 div {
@@ -45,6 +44,7 @@
   justify-content: space-between;
   gap: 60px;
   margin-right: 100px;
+  flex-wrap: wrap;
 }
 
 .footer-link-section ul li {
@@ -55,7 +55,7 @@
 .footer-link-section ul li p {
   color: #f7f5f7;
   font-size: 12px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 .footer-link-section ul li a {
   text-decoration: none;
@@ -103,8 +103,12 @@
 }
 
 @media screen and (max-width: 767px) {
-  .footer-link-section {
+  /* .footer-link-section {
     flex-direction: column;
+  } */
+
+  .footer-section-1{
+    width: 100%;
   }
 
   .footer-bottom-section {

@@ -1,10 +1,13 @@
 .doa-section {
   padding: 0 20px;
-  padding: var(--body-padding);
+  /* padding: var(--body-padding); */
+  padding: 4rem 15vw;
 }
 
 .doa-section h2 {
-  font-size: 20px;
+  font-size: 40px;
+
+  font-weight: 600;
 }
 .doa-section hr {
   height: 2px;
@@ -23,15 +26,16 @@
   align-items: center;
   justify-content: space-around;
   margin-top: 40px;
-  flex-wrap: wrap;
+  /*  */
   gap: 40px;
   /* margin-bottom: 0px; */
 }
 
 .doa-card-dark {
-  padding: 30px 40px;
+  padding: 50px;
   background-color: var(--black);
   border-radius: 20px;
+  width: 30vw;
 }
 
 .doa-card-dark img {
@@ -39,6 +43,7 @@
   align-self: center;
   margin-bottom: 40px;
   display: block;
+  width: 100%;
 }
 .doa-card-dark h3 {
   color: var(--white);
@@ -49,31 +54,40 @@
 .doa-card-dark p {
   color: var(--white);
   font-size: var(--sm-font-size);
-  width: 350px;
+  max-width: 350px;
 }
 
 .doa-coming-section {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   flex-direction: column;
+  height: 100%;
+  width: 35vw;
   gap: 20px;
 }
 
 .doa-coming-section section {
   padding: 30px 90px;
   background-color: var(--white);
-  border: 1px solid var(--black);
+  border: 1px solid #4a4a4a;
+
   border-radius: 20px;
+
+  width: 100%;
 }
 
 .doa-coming-section p {
   color: #4a4a4a;
-  font-size: 20px;
+  font-size: 25px;
+  text-align: center;
+  font-weight: 600;
 }
 
 @media screen and (max-width: 768px) {
-  .doa-section h2,
+  .doa-section h2 {
+    font-size: 30px;
+  }
   .doa-section p {
     text-align: center;
   }
@@ -83,9 +97,13 @@
 
     /* width: 100%; */
   }
+  .doa-card-section {
+    flex-wrap: wrap;
+  }
 
   .doa-coming-section {
     justify-content: stretch;
+    width: 100%;
   }
   /* 
   .doa-card-section {
@@ -93,11 +111,12 @@
     width: 70%;
   } */
 
-  .doa-card-dark  {
+  .doa-card-dark {
     width: auto;
+    width: 100%;
   }
 
-  .doa-card-dark h3{
+  .doa-card-dark h3 {
     font-size: 16px;
     text-align: center;
   }

@@ -5,10 +5,12 @@
   margin-top: 4rem;
   margin-bottom: 4rem;
   padding: var(--body-padding);
+  padding-top: 20px;
+  width: 100%;
 }
 
 .main-content {
-  padding: 5rem 0;
+  padding: 2rem 0;
 }
 
 .main-content h1 {
@@ -34,16 +36,19 @@
 }
 
 .main-image-container {
-  max-width: 45vw;
+  width: 40vw;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .main-image-container img {
-  width: 30vw;
+  width: 70%;
 }
 
 @media screen and (max-width: 767px) {
   .main {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
 
   .main-image-container img {
@@ -64,5 +69,13 @@
 
   .main-content a {
     margin: 0 auto;
+  }
+
+  .main-image-container {
+    width: 100%;
+  }
+
+  .main-content h1 {
+    font-size: 40px;
   }
 }

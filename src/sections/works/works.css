@@ -4,10 +4,10 @@
 
 .aqua-works-container-section h2 {
   font-size: 40px;
-  font-weight: 500;
+  font-weight: 600;
 }
 .aqua-works-container-section h2:nth-last-of-type(1) {
-  margin-left: 250px;
+  margin-left: 22rem;
 }
 
 .aqua-works-container {
@@ -44,7 +44,7 @@
 .second::after,
 .second::before {
   content: "";
-  width: 18.5vw;
+  width: 18vw;
   height: 2px;
   position: absolute;
   background-color: #96e7ff;
@@ -73,12 +73,11 @@
 
 @media screen and (max-width: 768px) {
   .aqua-works-container-section h2:nth-last-of-type(1) {
-    margin-left: 0;
+    margin-left: 16rem;
   }
 
   .aqua-works-container-section h2 {
-    font-size: 20px;
-    text-align: center;
+    font-size: 30px;
   }
 
   .aqua-works-container {
@@ -95,7 +94,7 @@
     text-align: left;
   }
 
-  .works-card-text{
+  .works-card-text {
     margin-left: 30px;
   }
 
@@ -116,17 +115,13 @@
     display: none;
   }
 
-  /* .second::after {
-    left: 0px;
-    top: 80px;
-  }
-  
+  .second::after,
   .second::before {
+    left: 0px;
     right: 0px;
-    bottom: 80px;
-  } */
+  }
 
-  .aqua-works-card-container p{
+  .aqua-works-card-container p {
     text-align: left;
     width: 100%;
   }

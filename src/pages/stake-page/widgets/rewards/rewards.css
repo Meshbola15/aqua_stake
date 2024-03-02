@@ -52,6 +52,7 @@
   width: 100%;
   padding: 10px;
   border-radius: 10px;
+  text-align: center;
 }
 
 .reward-table-section {
@@ -74,6 +75,11 @@
 .reward-table-container th {
   font-weight: 500;
   padding-bottom: 10px;
+}
+
+.reward-table-container td {
+  font-weight: 500;
+  font-size: 12px;
 }
 
 .reward-history-content-section {
@@ -121,4 +127,31 @@
 
 .reward-history-content-section p {
   font-size: 10px;
+}
+
+.reward-table-section{
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .reward-table-container th{
+    font-weight: 500;
+    font-size: 8px;
+  }
+
+  .reward-table-container td{
+    font-size: 8px;
+  }
+
+  .reward-history-checkmark-div p{
+    font-size: 8px;
+    margin-left: 6px;
+  }
+  .reward-history-checkmark-container h4{
+    font-size: 10px;
+  }
+
+  .reward-history-checkmark-div{
+    margin-left: 10px;
+  }
 }

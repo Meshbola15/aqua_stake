@@ -1,71 +1,11 @@
 import React, { useState } from "react";
 import "./AquaMain.css";
 import FaqCard from "../../FaqCard/FAqCard";
-
-const connectWalletInfo = [
-  {
-    title: "You will receive",
-    subTitle: "0 sAQUA",
-  },
-  {
-    title: "Exchange rate",
-    subTitle: "1 AQUA = 1 sAQUA",
-  },
-  {
-    title: "Max transaction cost",
-    subTitle: "N/A", // Assuming "N/A" represents not applicable
-  },
-  {
-    title: "Reward fee",
-    subTitle: "Variable",
-  },
-];
-
-const stakeStateData = [
-  {
-    title: "Annual percentage rate",
-    subTitle: "N/A",
-  },
-  {
-    title: "Total staked with Aqua stake",
-    subTitle: "N/A AQUA",
-  },
-  {
-    title: "Stakers",
-    subTitle: "N/A",
-  },
-  {
-    title: "sAQUA market cap",
-    subTitle: "N/A",
-  },
-];
-
-const faqData = [
-  {
-    id: 1,
-    question: "What is Aqua Stake?",
-    answer:
-      "Aqua Stake is the name of a family of open-source peer-to-system software tools deployed and functioning on the Ethereum, Solana, and Polygon blockchain networks. The software enables users to mint transferable utility tokens, which receive rewards linked to the related validation activities of writing data to the blockchain, while the tokens can be used in other on-chain activities.",
-  },
-  {
-    id: 2,
-    question: "How does Aqua stake work?",
-    answer:
-      "Aqua Stake is the name of a family of open-source peer-to-system software tools deployed and functioning on the Ethereum, Solana, and Polygon blockchain networks. The software enables users to mint transferable utility tokens, which receive rewards linked to the related validation activities of writing data to the blockchain, while the tokens can be used in other on-chain activities.",
-  },
-  {
-    id: 3,
-    question: "Is it safe to work with Aqua Stake?",
-    answer:
-      "Aqua Stake is the name of a family of open-source peer-to-system software tools deployed and functioning on the Ethereum, Solana, and Polygon blockchain networks. The software enables users to mint transferable utility tokens, which receive rewards linked to the related validation activities of writing data to the blockchain, while the tokens can be used in other on-chain activities.",
-  },
-  {
-    id: 4,
-    question: "What are the risks of staking with Aqua Stake?",
-    answer:
-      "Aqua Stake is the name of a family of open-source peer-to-system software tools deployed and functioning on the Ethereum, Solana, and Polygon blockchain networks. The software enables users to mint transferable utility tokens, which receive rewards linked to the related validation activities of writing data to the blockchain, while the tokens can be used in other on-chain activities.",
-  },
-];
+import {
+  stakeStateData,
+  connectWalletInfo,
+  stakeData,
+} from "../../../../data/faqDatas";
 
 const Claim = () => {
   return (
@@ -125,9 +65,7 @@ const Request = () => {
 };
 
 const AquaMain = () => {
-  const [isFaqOpen, setIsFaqOpen] = useState(false);
   const [isMainActive, setIsMainActive] = useState(false);
-  const [faqIndex, setFaqIndex] = useState(0);
   return (
     <div className="aqua-stake-main-container">
       <div className="aqua-stake-main-header-texts">
@@ -158,7 +96,7 @@ const AquaMain = () => {
 
       {/* end of aqua stake-stats-container */}
 
-      <FaqCard faqData={faqData} />
+      <FaqCard faqData={stakeData} />
     </div>
   );
 };

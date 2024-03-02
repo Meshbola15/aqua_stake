@@ -3,6 +3,7 @@ import "./supported.css";
 import eth from "../../assets/eth-logo.svg";
 import polygon from "../../assets/polygon-logo.svg";
 import sol from "../../assets/solana-logo.svg";
+import { Link } from "react-router-dom";
 
 const Supported = () => {
   return (
@@ -42,8 +43,8 @@ const Supported = () => {
           </section>
 
           <section className="supported-btn">
-            <a href="#">Learn more</a>
-            <a href="#">Stake now</a>
+            <Link to="#">Learn more</Link>
+            <Link to="/page/stake">Stake now</Link>
           </section>
         </div>
         {/* End of second Container */}
@@ -58,8 +59,8 @@ const Supported = () => {
           <h3 className="supported-soon">Coming Soon!</h3>
 
           <section className="supported-btn">
-            <a href="#">Learn more</a>
-            <a href="#">Stake now</a>
+            <Link to="#">Learn more</Link>
+            <Link to="/page/stake">Stake now</Link>
           </section>
         </div>
 
@@ -74,8 +75,8 @@ const Supported = () => {
           <h3 className="supported-soon">Coming Soon!</h3>
 
           <section className="supported-btn">
-            <a href="#">Learn more</a>
-            <a href="#">Stake now</a>
+            <Link to="#">Learn more</Link>
+            <Link to="/page/stake">Stake now</Link>
           </section>
         </div>
 

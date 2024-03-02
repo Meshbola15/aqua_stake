@@ -63,9 +63,21 @@
   text-transform: capitalize;
 }
 
+.aqua-stake-navbar-nav ul a:last-of-type {
+  display: none;
+}
 
 .stake-menu {
   display: none;
+}
+@media screen and (max-width: 1025px) {
+  .aqua-stake-navbar-logo-container img {
+    width: 20px;
+  }
+
+  .aqua-stake-navbar-container p{
+    font-size: 12px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -116,8 +128,15 @@
     display: none;
   }
 
-  .aqua-stake-navbar-connect-btn-mobile {
+  .aqua-stake-navbar-nav ul a:last-of-type{
     display: block;
+  }
+
+  .aqua-stake-navbar-connect-btn-mobile {
     margin-top: 30px;
+  }
+
+  .stake-menu {
+    display: block;
   }
 }

@@ -196,4 +196,17 @@ input::-webkit-inner-spin-button {
     flex-direction: column;
     margin-bottom: 50px;
   }
+
+  .aqua-withdrawal-main-input-logo{
+    padding-left: 20px;
+    padding-right: 10px;
+  }
+  .aqua-withdrawal-main-input-logo img{
+    width: 15px;
+    margin-right: 8px;
+  }
+
+  .aqua-withdrawal-main-input-logo svg{
+    font-size: 20px;
+  }
 }

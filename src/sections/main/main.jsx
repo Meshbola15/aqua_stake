@@ -8,7 +8,7 @@ const Main = () => {
     <section className="main">
       <div className="main-content">
         <h1>
-          The Ultimate <br /> Staking Protocol
+          The Ultimate  Staking Protocol
         </h1>
 
         <p>Easy and Uncapped staking</p>

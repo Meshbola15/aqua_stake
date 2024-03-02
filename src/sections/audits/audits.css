@@ -5,7 +5,8 @@
   color: var(--white);
   text-align: center;
   background-color: #171717;
-  padding: var(--body-padding);
+  /* padding: var(--body-padding); */
+  padding: 10rem 10vw;
 }
 
 .audits-container h3 {

@@ -1,7 +1,8 @@
 .community-container {
   padding: 0 100px;
   margin: 20px auto;
-  padding: var(--body-padding);
+  /* padding: var(--body-padding); */
+  padding: 4rem 15vw;
 }
 
 .community-email-container {
@@ -77,10 +78,14 @@
 }
 
 .community-social-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  /* display: grid;
+  grid-template-columns: repeat(2, 1fr); */
+  display: flex;
+  flex-wrap: wrap;
   gap: 20px;
-  margin: 50px auto;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
 }
 
 .social-links {

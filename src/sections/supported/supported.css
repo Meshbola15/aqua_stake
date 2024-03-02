@@ -5,7 +5,7 @@
 
 .supported-header h2 {
   font-size: 40px;
-  font-weight: var(--sm-font-weight);
+  font-weight: 600;
   /* font-family: var(--primary-font-family); */
 }
 
@@ -44,7 +44,9 @@
 }
 
 .supported-card h4 {
-  font-size: 14px;
+  font-size: 16px;
+  margin-top: 10px;
+  font-weight: 600;
 }
 
 .supported-card p {
@@ -106,16 +108,21 @@
 }
 
 .supported-soon {
-  margin: 55px 0;
+  margin: 60px 0;
   font-size: 30px;
+  font-weight: 600;
 }
 
 @media screen and (max-width: 768px) {
-  .supported-header {
+  /* .supported-header {
     text-align: center;
-  }
+  } */
   .supported-header h2:nth-last-of-type(1) {
-    margin-left: 0rem;
+    margin-left: 6rem;
+  }
+
+  .supported-header h2 {
+    font-size: 30px;
   }
 
   /* .supported-btn {

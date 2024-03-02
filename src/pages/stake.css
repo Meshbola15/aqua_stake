@@ -1,0 +1,18 @@
+.stake-home {
+  background-color: #010511;
+}
+
+#root {
+  --main-stake-body-background: #1a3068;
+  --main-stake-input-background: #102352;
+  --main-stake-input-btn-background: #1754eb;
+  --main-body-padding:  4rem 30vw;
+}
+
+@media screen and (max-width: 767px) {
+  #root{
+    --main-body-padding:  4rem 10vw;
+  }
+}
+
+

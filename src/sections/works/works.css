@@ -1,0 +1,133 @@
+.aqua-works-container-section {
+  padding: var(--body-padding);
+}
+
+.aqua-works-container-section h2 {
+  font-size: 40px;
+  font-weight: 500;
+}
+.aqua-works-container-section h2:nth-last-of-type(1) {
+  margin-left: 250px;
+}
+
+.aqua-works-container {
+  border: 1px solid var(--black);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  background-color: var(--white);
+  padding: 80px 30px;
+  border-radius: 20px;
+  margin-top: 40px;
+}
+
+.aqua-works-card-container {
+  text-align: center;
+  margin: auto;
+}
+
+.aqua-works-card-image-circle {
+  height: 80px;
+  width: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  border: 1px solid #96e7ff;
+  position: relative;
+  z-index: 2;
+  margin: auto;
+}
+
+.second::after,
+.second::before {
+  content: "";
+  width: 18.5vw;
+  height: 2px;
+  position: absolute;
+  background-color: #96e7ff;
+}
+
+.second::after {
+  left: 80px;
+}
+
+.second::before {
+  right: 80px;
+}
+
+.aqua-works-card-container h4 {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.aqua-works-card-container p {
+  font-size: 10px;
+  width: 70%;
+  text-align: center;
+  margin: auto;
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .aqua-works-container-section h2:nth-last-of-type(1) {
+    margin-left: 0;
+  }
+
+  .aqua-works-container-section h2 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .aqua-works-container {
+    flex-direction: column;
+    padding: 40px 30px;
+  }
+
+  .aqua-works-card-container {
+    display: flex;
+    /* margin-left: 20px; */
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 50px;
+    text-align: left;
+  }
+
+  .works-card-text{
+    margin-left: 30px;
+  }
+
+  .aqua-works-card-image-circle {
+    display: flex;
+    height: 70px;
+    width: 70px;
+  }
+
+  .aqua-works-card-image {
+    width: 50px;
+  }
+
+  .second::after,
+  .second::before {
+    height: 18.5vh;
+    width: 2px;
+    display: none;
+  }
+
+  /* .second::after {
+    left: 0px;
+    top: 80px;
+  }
+  
+  .second::before {
+    right: 0px;
+    bottom: 80px;
+  } */
+
+  .aqua-works-card-container p{
+    text-align: left;
+    width: 100%;
+  }
+}

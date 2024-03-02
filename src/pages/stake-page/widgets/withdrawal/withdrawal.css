@@ -1,0 +1,199 @@
+#root {
+  --border-color: #1754eb;
+}
+
+/* .aqua-with-main-content {
+} */
+
+.aqua-withdrawal-main-content-container {
+  background-color: var(--main-stake-body-background);
+  padding: 30px 30px;
+  border-radius: 20px;
+}
+
+.aqua-withdrawal-main-input-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: stretch;
+  border: 1px solid #1754eb;
+  border-radius: 10px;
+  /* padding: 10px 20px; */
+  gap: 0;
+  color: var(--white);
+  background-color: var(--main-stake-input-background);
+}
+
+.aqua-withdrawal-main-input-logo {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* padding: 10px; */
+  /* margin: 10px 20px; */
+}
+
+.aqua-withdrawal-main-input-logo img {
+  width: 20px;
+  /* margin-right: 10px; */
+}
+
+.aqua-withdrawal-main-input-logo-input {
+  flex: 3;
+  background-color: transparent;
+  width: 100%;
+  outline: none;
+  border: none;
+  border-left: 1px solid #1754eb;
+  /* border-right: 1px solid #1754eb; */
+  font-size: 20px;
+  height: 100%;
+  color: var(--white);
+  padding: 10px 10px;
+  text-align: right;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.aqua-withdrawal-main-input-logo-btn {
+  padding: 10px 15px;
+  color: var(--white);
+  font-size: 12px;
+  background-color: var(--main-stake-input-btn-background);
+  margin: auto 20px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  margin: 10px 20px;
+}
+
+.aqua-withdrawal-header-text-container{
+  margin-bottom: 40px;
+}
+
+.aqua-withdrawal-header-text-container h2{
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.aqua-withdrawal-header-text-container p {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.aqua-withdrawal-main-card-container {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 20px;
+}
+
+.aqua-withdrawal-main-card-box {
+  border: 1px solid var(--border-color);
+  padding: 20px;
+  border-radius: 20px;
+  background-color: var(--main-stake-input-background);
+}
+
+.aqua-withdrawal-main-card-box-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.aqua-withdrawal-main-card-box-container:first-of-type {
+  margin-bottom: 30px;
+}
+
+.aqua-withdrawal-stake-price-container {
+  width: 100%;
+  margin: 20px 0;
+}
+
+.aqua-withdrawal-stake-price-container-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid var(--border-color);
+  padding: 20px 20px;
+  border-radius: 20px;
+  background-color: var(--main-stake-input-background);
+}
+
+.aqua-withdrawal-stake-price-container-content-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.aqua-withdrawal-stake-price-container-content-section img {
+  width: 40px;
+}
+
+.aqua-withdrawal-stake-price-container-content-section p {
+  font-size: 15px;
+}
+
+.aqua-withdrawal-stake-price-container-content-btn {
+  width: 100%;
+  margin-top: 30px;
+  padding: 20px 0;
+  font-size: 15px;
+  background-color: var(--main-stake-input-btn-background);
+  border: none;
+  border-radius: 20px;
+  color: var(--white);
+  text-transform: capitalize;
+  font-family: "poppins", sans-serif;
+  margin-bottom: 20px;
+}
+
+.aqua-withdrawal-link-card-container {
+  background-color: var(--main-stake-input-background);
+  margin: 10px 0;
+  padding: 15px 20px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.aqua-withdrawal-link-card-image-details {
+  display: flex;
+  align-items: center;
+}
+
+.aqua-withdrawal-link-card-image-details img {
+  width: 40px;
+  margin-right: 20px;
+}
+
+.aqua-withdrawal-link-card-image-details div {
+  text-align: left;
+  font-size: 12px;
+}
+
+.aqua-withdrawal-link-card-image-details div a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.aqua-withdrawal-main-card-box-container img{
+  width: 20px;
+}
+
+
+@media screen and (max-width: 768px) {
+  .aqua-withdrawal-main-card-container{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+}

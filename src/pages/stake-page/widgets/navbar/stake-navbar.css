@@ -1,0 +1,123 @@
+.aqua-stake-navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 10%;
+  color: var(--white);
+  text-transform: uppercase;
+}
+
+.aqua-stake-navbar-logo-container {
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+}
+
+.aqua-stake-navbar-logo-container img {
+  width: 25px;
+  margin-right: 10px;
+}
+
+.aqua-stake-navbar-logo-container p {
+  font-size: 15px;
+}
+.aqua-stake-navbar-container-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.aqua-stake-navbar-nav ul {
+  display: flex;
+  align-items: center;
+}
+
+.aqua-stake-navbar-nav ul a {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-right: 30px;
+  font-size: 15px;
+  text-decoration: none;
+  color: var(--white);
+}
+
+.aqua-stake-navbar-connect-btn {
+  padding: 10px 20px;
+  font-size: 12px;
+  background-color: var(--main-stake-input-btn-background);
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.aqua-stake-navbar-connect-btn-mobile {
+  display: none;
+  padding: 10px 20px;
+  font-size: 12px;
+  background-color: var(--main-stake-input-btn-background);
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+
+.stake-menu {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .aqua-stake-navbar-container {
+    align-items: flex-start;
+  }
+
+  .aqua-stake-navbar-container-right {
+    align-items: flex-start;
+  }
+  .aqua-stake-navbar-nav ul {
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    /* padd-top: 20px; */
+  }
+
+  .aqua-stake-navbar-menu {
+    display: flex;
+    align-items: center;
+  }
+
+  .stake-navbar {
+    display: none;
+  }
+
+  .aqua-stake-navbar-connect-btn {
+    margin-right: 10px;
+    font-size: 12px;
+  }
+
+  .aqua-stake-navbar-nav ul a {
+    font-size: 12px;
+    margin-right: 0px;
+    margin-top: 10px;
+    /* align-items: ; */
+  }
+
+  .aqua-stake-navbar-logo-container p {
+    font-size: 12px;
+  }
+
+  .aqua-stake-navbar-logo-container img {
+    width: 20px;
+  }
+
+  .aqua-stake-navbar-connect-btn {
+    display: none;
+  }
+
+  .aqua-stake-navbar-connect-btn-mobile {
+    display: block;
+    margin-top: 30px;
+  }
+}

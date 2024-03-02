@@ -1,0 +1,124 @@
+.supported-container {
+  margin: var(--base-margin);
+  padding: var(--body-padding);
+}
+
+.supported-header h2 {
+  font-size: 40px;
+  font-weight: var(--sm-font-weight);
+  /* font-family: var(--primary-font-family); */
+}
+
+.supported-header h2:nth-last-of-type(1) {
+  margin-left: 12rem;
+}
+
+.supported-header hr {
+  /* width: 2px; */
+  height: 2px;
+  border: none;
+  background-color: var(--black);
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.supported-header p {
+  font-size: var(--sm-font-size);
+  margin-bottom: 20px;
+}
+.supported-card-section {
+  display: flex;
+  align-items: center;
+  /* grid-template-columns: minmax(); */
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.supported-card {
+  border: 2px solid var(--black);
+  border-radius: 10px;
+  padding: 30px 30px;
+  text-align: center;
+  flex: 1;
+  /* height: 300px; */
+}
+
+.supported-card h4 {
+  font-size: 14px;
+}
+
+.supported-card p {
+  font-size: 12px;
+  color: #313131;
+}
+
+.supported-card-variable {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  padding: 0 40px;
+}
+
+.supported-card-variable hr {
+  border: none;
+  background-color: #cfcfcf;
+  height: 30px;
+  width: 2px;
+}
+
+#variable-coloured {
+  color: #65b204;
+}
+
+.supported-card-variable h3 {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.supported-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.supported-btn a {
+  padding: 10px 25px;
+  text-decoration: none;
+  border-radius: 10px;
+}
+
+.supported-btn a:first-child {
+  background-color: #343a49;
+  color: var(--white);
+}
+
+.supported-btn a:last-child {
+  background-color: var(--secondary-color);
+  color: var(--black);
+}
+
+.card-dark {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.supported-soon {
+  margin: 55px 0;
+  font-size: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .supported-header {
+    text-align: center;
+  }
+  .supported-header h2:nth-last-of-type(1) {
+    margin-left: 0rem;
+  }
+
+  /* .supported-btn {
+    flex-direction: column;
+  } */
+}

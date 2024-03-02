@@ -1,0 +1,6 @@
+#root {
+  margin: 0 auto;
+  /* padding:  4rem  10rem 4rem 10rem; */
+  background-color: var(--primary-background-color);
+  font-family: var(--primary-font-family);
+}

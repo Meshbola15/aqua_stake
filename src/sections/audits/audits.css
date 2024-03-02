@@ -1,0 +1,30 @@
+.audits-container {
+  /* background-color: var(--black); */
+  margin-top: 70px;
+  padding-top: 100px;
+  color: var(--white);
+  text-align: center;
+  background-color: #171717;
+  padding: var(--body-padding);
+}
+
+.audits-container h3 {
+  font-size: 30px;
+  font-weight: var(--sm-font-weight);
+}
+
+.audits-container h2 {
+  font-size: 60px;
+  margin-top: 10px;
+  font-weight: var(--sm-font-weight);
+}
+
+@media screen and (max-width: 768px) {
+  .audits-container h3 {
+    font-size: 15px;
+  }
+
+  .audits-container h2 {
+    font-size: 35px;
+  }
+}

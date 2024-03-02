@@ -1,0 +1,49 @@
+.aqua-footer-container {
+  padding: 4rem 10%;
+  color: var(--white);
+}
+
+.aqua-footer-container hr {
+  height: 1px;
+  background-color: #102352;
+  border: none;
+  margin: 10px;
+}
+
+.aqua-footer-logo-content {
+  display: flex;
+  align-items: center;
+  justify-content: flex-startF;
+}
+
+.aqua-footer-logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-right: 60px;
+}
+
+.aqua-footer-logo-container img {
+  width: 25px;
+  margin-right: 10px;
+}
+
+.aqua-footer-logo-container p {
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+
+@media screen and (max-width: 768px) {
+  .aqua-footer-logo-container p{
+    font-size: 12px;
+  }
+
+  .aqua-footer-logo-container img {
+    width: 20px;
+  }
+
+  .aqua-footer-container-text{
+    font-size: 10px;
+  }
+}

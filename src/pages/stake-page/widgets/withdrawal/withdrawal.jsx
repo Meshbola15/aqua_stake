@@ -11,26 +11,7 @@ import linch from "../../../../assets/linch.svg";
 import { RxDash } from "react-icons/rx";
 import { FiExternalLink } from "react-icons/fi";
 import FaqCard from "../../FaqCard/FAqCard";
-import { withdrawalFaqData } from "../../../../data/faqDatas";
-
-const withdrawalData = [
-  {
-    title: "You will receive",
-    subtitle: "0sAQUA",
-  },
-  {
-    title: "Exchange rate",
-    subtitle: "1 AQUA = 1sAQUA",
-  },
-  {
-    title: "Max transaction cost",
-    subtitle: "NAN",
-  },
-  {
-    title: "Reward fee",
-    subtitle: "NAN",
-  },
-];
+import { withdrawalFaqData, withdrawalData } from "../../../../data/data";
 
 const SectionOne = () => {
   return (
@@ -154,7 +135,7 @@ const AquaWithdrawal = () => {
             </section>
           )}
         </section>
-          <FaqCard faqData={withdrawalFaqData} />
+        <FaqCard faqData={withdrawalFaqData} />
       </section>
     </div>
   );

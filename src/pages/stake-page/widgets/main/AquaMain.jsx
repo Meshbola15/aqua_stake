@@ -5,7 +5,7 @@ import {
   stakeStateData,
   connectWalletInfo,
   stakeData,
-} from "../../../../data/faqDatas";
+} from "../../../../data/data";
 
 const Claim = () => {
   return (
@@ -28,7 +28,7 @@ const Request = () => {
       {/* connect wallet conatiner */}
       <div className="aqua-connect-wallet-container">
         <form className="aqua-connect-wallet-input-container">
-          <input type="number" name="" id="" />
+          <input type="text" name="eth address text" id="eth-address-input" />
           <button className="aqua-connect-wallet-connect-btn">
             Connect Wallet
           </button>

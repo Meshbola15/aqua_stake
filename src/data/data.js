@@ -132,4 +132,23 @@ const stakeStateData = [
   },
 ];
 
-export { stakeData, connectWalletInfo, stakeStateData, withdrawalFaqData };
+const withdrawalData = [
+  {
+    title: "You will receive",
+    subtitle: "0sAQUA",
+  },
+  {
+    title: "Exchange rate",
+    subtitle: "1 AQUA = 1sAQUA",
+  },
+  {
+    title: "Max transaction cost",
+    subtitle: "NAN",
+  },
+  {
+    title: "Reward fee",
+    subtitle: "NAN",
+  },
+];
+
+export { withdrawalData, stakeData, connectWalletInfo, stakeStateData, withdrawalFaqData };

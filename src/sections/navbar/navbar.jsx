@@ -3,8 +3,26 @@ import { IoIosArrowRoundForward } from "react-icons/io";
 import logo from "../../assets/nav-logo.svg";
 import { MdMenu } from "react-icons/md";
 import "./navbar.css";
-import { Link } from "react-router-dom";
+// import { HashLink } from "react-router-dom";
+
 import { MdOutlineClose } from "react-icons/md";
+import { HashLink } from "react-router-hash-link";
+
+const NavbarLinkItems = ({ path, name }) => {
+  return (
+    <li className="navbar-item-link">
+      <HashLink
+        scroll={(el) => el.scrollIntoView({ behavior: "smooth" })}
+        to={`/#${path}`}
+        // activeClassName="selected"
+        // activeStyle={{ color: "#ff61d1" }}
+        className="navbar-item-link"
+      >
+        {name}
+      </HashLink>
+    </li>
+  );
+};
 
 const Navbar = () => {
   const [isOpened, setIsOpened] = useState(false);
@@ -14,40 +32,24 @@ const Navbar = () => {
         <img src={logo} alt="" />
         <p>Aqua Stake</p>
       </div>
-
       <nav className={`nav-section ${!isOpened && "mobile-menu"}`}>
         <ul>
-          <li>
-            <Link to="">Networks</Link>
-          </li>
-          <li>
-            <Link to="">Node Operators</Link>
-          </li>
-          <li>
-            <Link to="">Governace</Link>
-          </li>
-          <li>
-            <Link to="">Analytics</Link>
-          </li>
+          <NavbarLinkItems path="network" name="Network" />
+
+          <NavbarLinkItems path="about" name="About" />
+          <NavbarLinkItems path="dao" name="DAO" />
           <li id="nav-logo">
             <img src={logo} alt="" />
             <p>Aqua Stake</p>
           </li>
-          <li>
-            <Link to="">Developers</Link>
-          </li>
-          <li>
-            <Link to="">Community</Link>
-          </li>
-          <li>
-            <Link to="">About</Link>
-          </li>
-          <li>
-            <Link to="" id="nav-section-btn">
-              Join Telegram
-              <IoIosArrowRoundForward size={20} />
-            </Link>
-          </li>
+
+          <NavbarLinkItems path="audit" name="Audit" />
+
+          <NavbarLinkItems path="community" name="Community" />
+          <HashLink to="" id="nav-section-btn">
+            Join Telegram
+            <IoIosArrowRoundForward size={20} />
+          </HashLink>
         </ul>
         <hr className="nav-line" />
       </nav>

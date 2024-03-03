@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 
 const Supported = () => {
   return (
-    <div className="supported-container">
+    <div className="supported-container" id="network">
       <section className="supported-header">
         <article>
           <h2>Supported</h2>

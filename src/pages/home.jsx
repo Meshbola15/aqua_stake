@@ -9,10 +9,11 @@ import Audits from "../sections/audits/audits";
 import Stake from "../sections/stake/stake";
 import Community from "../sections/community/community";
 import Footer from "../sections/footer/footer";
+import { HashRouter } from "react-router-dom";
 
 const Home = () => {
   return (
-    <body>
+    <>
       <Navbar />
       <Main />
       <Info />
@@ -23,7 +24,7 @@ const Home = () => {
       <Stake />
       <Community />
       <Footer />
-    </body>
+    </>
   );
 };
 

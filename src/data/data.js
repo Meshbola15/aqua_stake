@@ -151,4 +151,19 @@ const withdrawalData = [
   },
 ];
 
-export { withdrawalData, stakeData, connectWalletInfo, stakeStateData, withdrawalFaqData };
+const transferData = [
+  {
+    balance: "-",
+    rewarded: "-",
+    avrAPR: "-",
+    price: "-",
+  },
+  {
+    balance: "-",
+    rewarded: "-",
+    avrAPR: "-",
+    price: "-",
+  },
+];
+
+export { withdrawalData, stakeData, connectWalletInfo, stakeStateData, withdrawalFaqData, transferData };

@@ -25,7 +25,7 @@ const IconColor = "#ffffff";
 
 const Community = () => {
   return (
-    <div className="community-container">
+    <div className="community-container" id="community">
       <section className="community-email-container">
         <h3>Join our Community</h3>
         <p>

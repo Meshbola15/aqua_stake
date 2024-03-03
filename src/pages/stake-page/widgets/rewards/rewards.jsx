@@ -1,21 +1,9 @@
 import React from "react";
 import "./rewards.css";
 import "../main/AquaMain.css";
+import { transferData } from "../../../../data/data";
 
-const transferData = [
-  {
-    balance: "-",
-    rewarded: "-",
-    avrAPR: "-",
-    price: "-",
-  },
-  {
-    balance: "-",
-    rewarded: "-",
-    avrAPR: "-",
-    price: "-",
-  },
-];
+
 
 const RewardTable = () => {
   return (

@@ -4,7 +4,7 @@ import governace from "../../assets/goverance-process.svg";
 
 const DAO = () => {
   return (
-    <div className="doa-section">
+    <div className="doa-section" id="dao">
       <h2>Aqua stake DAO</h2>
 
       <hr />

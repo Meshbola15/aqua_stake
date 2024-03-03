@@ -7,6 +7,7 @@ import { IoMdArrowDropdown } from "react-icons/io";
 import aquaLogo from "../../../../assets/logo-bg-white.svg";
 import paraSwap from "../../../../assets/para-swap.svg";
 import cowSwap from "../../../../assets/aggre-logo.svg";
+import aggregator from "../../../../assets/aggregator.svg";
 import linch from "../../../../assets/linch.svg";
 import { RxDash } from "react-icons/rx";
 import { FiExternalLink } from "react-icons/fi";
@@ -95,7 +96,7 @@ const AquaWithdrawal = () => {
             <div className="aqua-withdrawal-main-card-box">
               <article className="aqua-withdrawal-main-card-box-container">
                 <h4>Use Aqua</h4>
-                <img src={aquaLogo} alt="" />
+                <img src={aquaLogo} alt="" className="aqua-logo" />
               </article>
               <article className="aqua-withdrawal-main-card-box-container">
                 <p>Rate:</p>
@@ -108,17 +109,17 @@ const AquaWithdrawal = () => {
             </div>
             {/* ////////////////////////////////////////// */}
             <div className="aqua-withdrawal-main-card-box">
-              <article className="aqua-withdrawal-main-card-box-container">
-                <h4>Use Aqua</h4>
-                <img src={paraSwap} alt="" />
+              <article className="aqua-withdrawal-main-card-box-container ">
+                <h4>Use Aggregators</h4>
+                <img src={aggregator} alt="" className="aggre-logo" />
               </article>
               <article className="aqua-withdrawal-main-card-box-container">
-                <p>Rate:</p>
-                <p>1:1</p>
+                <p>Best Rate:</p>
+                <p>1 : 1.0003</p>
               </article>
               <article className="aqua-withdrawal-main-card-box-container">
                 <p>Waiting Time:</p>
-                <p>~ 1-5 day(s)</p>
+                <p>~ 1-5 minute(s)</p>
               </article>
             </div>
           </section>

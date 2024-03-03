@@ -22,7 +22,7 @@ const WorksCard = ({ image, title, subTitle, lineType }) => {
 
 const Works = () => {
   return (
-    <div className="aqua-works-container-section">
+    <div className="aqua-works-container-section" id='about'>
       <h2>How Aqua Stake</h2>
       <h2>Works</h2>
       <hr />

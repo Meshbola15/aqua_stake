@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import { AiFillThunderbolt } from "react-icons/ai";
-import { HiOutlineGiftTop } from "react-icons/hi2";
-import { IoCloudDownloadSharp } from "react-icons/io5";
+import { BiSolidPackage } from "react-icons/bi";
 import { MdOutlineClose } from "react-icons/md";
+import { HiSquare3Stack3D } from "react-icons/hi2";
+import { FaMoneyCheckDollar } from "react-icons/fa6";
 import "./stake-navbar.css";
 import navlogo from "../../../../assets/logo-big.svg";
 import { Link } from "react-router-dom";
@@ -25,15 +25,15 @@ const AquaNavbar = () => {
       >
         <ul>
           <Link to="stake">
-            <AiFillThunderbolt />
+            <HiSquare3Stack3D />
             <p>Stake</p>
           </Link>
           <Link to="wrap">
-            <HiOutlineGiftTop />
+            <BiSolidPackage />
             <p>Rewards</p>
           </Link>
           <Link to="withdrawals">
-            <IoCloudDownloadSharp />
+            <FaMoneyCheckDollar />
             <p>Withdrawals</p>
           </Link>
           <Link to="#" className="aqua-stake-navbar-connect-btn-mobile">

@@ -9,6 +9,7 @@
   background-color: var(--main-stake-body-background);
   padding: 30px 30px;
   border-radius: 20px;
+  min-height: 100vh;
 }
 
 .aqua-withdrawal-main-input-container {
@@ -185,8 +186,12 @@ input::-webkit-inner-spin-button {
   gap: 5px;
 }
 
-.aqua-withdrawal-main-card-box-container img{
+.aqua-logo{
   width: 20px;
+}
+
+.aggre-logo{
+  width: 50px;
 }
 
 

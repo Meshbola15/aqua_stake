@@ -75,6 +75,12 @@
 .stake-menu {
   display: none;
 }
+
+.aqua-stake-navbar-nav svg{
+ font-size: 22px;
+}
+
+
 @media screen and (max-width: 1025px) {
   .aqua-stake-navbar-logo-container img {
     width: 20px;

@@ -32,7 +32,7 @@
 
 .stake-card-container div {
   background-color: var(--black);
-  padding: 30px 50px;
+  padding:  50px;
   border-radius: 20px;
 }
 
@@ -53,9 +53,9 @@
   margin-bottom: 20px;
   color: #FFFCED;
 }
-.spacer {
+/* .spacer {
   height: 20px;
-}
+} */
 
 .stake-card-container a {
   padding: 10px 25px;
@@ -76,7 +76,18 @@
   }
 
   .stake-card-container img {
-    margin: 0 auto;
-    align-self: center;
+    /* margin-top: 0px; */
+    margin: 0px auto 10px auto;
+   display: flex;
+   align-self: center;
+   justify-self: center;
+  }
+
+  .stake-card-container h2 {
+    text-align: center;
+  }
+
+  .stake-card-container p {
+    text-align: center;
   }
 }

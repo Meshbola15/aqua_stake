@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { AiFillThunderbolt } from "react-icons/ai";
-import { BsBoxFill } from "react-icons/bs";
+import { HiOutlineGiftTop } from "react-icons/hi2";
 import { IoCloudDownloadSharp } from "react-icons/io5";
 import { MdOutlineClose } from "react-icons/md";
 import "./stake-navbar.css";
@@ -29,21 +29,21 @@ const AquaNavbar = () => {
             <p>Stake</p>
           </Link>
           <Link to="wrap">
-            <BsBoxFill />
+            <HiOutlineGiftTop />
             <p>Rewards</p>
           </Link>
           <Link to="withdrawals">
             <IoCloudDownloadSharp />
             <p>Withdrawals</p>
           </Link>
-          <Link to="" className="aqua-stake-navbar-connect-btn-mobile">
+          <Link to="#" className="aqua-stake-navbar-connect-btn-mobile">
             Connect wallet
           </Link>
         </ul>
       </nav>
 
       <div className="aqua-stake-navbar-menu">
-        <Link to="" className="aqua-stake-navbar-connect-btn">
+        <Link to="#" className="aqua-stake-navbar-connect-btn">
           Connect wallet
         </Link>
         {isMenuActive ? (

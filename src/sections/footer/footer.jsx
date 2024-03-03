@@ -93,7 +93,7 @@ const Footer = () => {
         <p>Copyright © 2024 AQUASTAKE</p>
         <div>
           <a href="#">Terms of Use</a>
-          <hr />
+         |
           <a href="#">Privacy Policy</a>
         </div>
       </section>

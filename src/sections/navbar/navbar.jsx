@@ -4,6 +4,7 @@ import logo from "../../assets/nav-logo.svg";
 import { MdMenu } from "react-icons/md";
 import "./navbar.css";
 import { Link } from "react-router-dom";
+import { MdOutlineClose } from "react-icons/md";
 
 const Navbar = () => {
   const [isOpened, setIsOpened] = useState(false);
@@ -52,7 +53,7 @@ const Navbar = () => {
       </nav>
 
       <div className="menu-btn" onClick={() => setIsOpened(!isOpened)}>
-        <MdMenu size={20} />
+        {isOpened ? <MdOutlineClose size={20} /> : <MdMenu size={20} />}
       </div>
     </section>
   );

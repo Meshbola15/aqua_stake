@@ -20,7 +20,12 @@
 
 .aqua-stake-navbar-logo-container p {
   font-size: 15px;
+  color: white;
+  text-decoration: none;
+  outline: none;
 }
+
+
 .aqua-stake-navbar-container-right {
   display: flex;
   align-items: center;

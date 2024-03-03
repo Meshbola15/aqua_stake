@@ -21,6 +21,8 @@
   align-items: center;
   justify-content: flex-start;
   margin-right: 60px;
+  color: white;
+  text-decoration: none;
 }
 
 .aqua-footer-logo-container img {
@@ -45,5 +47,8 @@
 
   .aqua-footer-container-text{
     font-size: 10px;
+  }
+  .aqua-stake-navbar-logo-container{
+    margin-right: 0px;
   }
 }

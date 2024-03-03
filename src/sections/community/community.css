@@ -129,8 +129,18 @@
 }
 
 @media screen and (max-width: 768px) {
-  #community-email-id {
+  /* #community-email-id {
     width: 50%;
+  } */
+
+  
+
+  .community-container {
+    padding: 4rem 10vw;
+  }
+
+  .community-email-container {
+    padding: 50px 40px;
   }
 
   .community-social-container {
@@ -139,6 +149,9 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    padding: 4rem 10vw;
+    gap: 0px;
+    width: 100%;
   }
 
   .community-email button {
@@ -151,8 +164,9 @@
   }
 
   .social-links {
-    width: 200px;
+    width: 100%;
     padding: 20px 30px;
+    margin-bottom: 20px;
   }
 
   .social-link-text h2 {
@@ -174,5 +188,32 @@
     width: 35px;
     height: 35px;
     border-radius: 35px;
+  }
+
+  .community-email {
+    border: none;
+    padding: none;
+  }
+
+  #community-email-id {
+    border: 1px solid var(--black);
+    padding: 10px;
+    border-radius: 10px;
+    width: fit-content;
+    margin: 10px auto;
+    font-family: "poppins", sans-serif;
+    font-size: 12px;
+    width: 100%;
+  }
+
+  #community-email-id:active,
+  #community-email-id:focus {
+    border: 1px solid var(--black);
+  }
+
+  .community-email button {
+    width: 100%;
+    margin-left: 0px;
+    border-radius: 10px;
   }
 }

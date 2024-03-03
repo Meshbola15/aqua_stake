@@ -22,10 +22,10 @@ const RewardTable = () => {
     <table className="reward-table-container">
       <thead>
         <tr>
-          <th>stETH balance</th>
-          <th>stETH rewarded</th>
+          <th>sAQUA balance</th>
+          <th>sAQUA rewarded</th>
           <th>Average APR</th>
-          <th>stETH price</th>
+          <th>sAQUA price</th>
         </tr>
       </thead>
       <tbody>
@@ -47,11 +47,11 @@ const AquaRewards = () => {
     <div className="reward-main-background">
       <div className="reward-header-content">
         <h2>Reward History</h2>
-        <p>Track your Ethereum staking rewards with Aqua Stake.</p>
+        <p>Track your sAQUA staking rewards with Aqua Stake.</p>
       </div>
       <section className="reward-body">
         <div className="reward-input-contents">
-          <input type="text" placeholder="Etheruem Address" />
+          <input type="text" placeholder="Ethereum Address" />
           <article>
             Current balance may differ from last balance in the table due to
             rounding.
@@ -63,13 +63,12 @@ const AquaRewards = () => {
         </section>
       </section>
 
-
       <section className="reward-history-content-section">
         <div className="reward-history-checkmark-container">
           <h4>Reward History</h4>
           <div className="reward-history-checkmark-div">
             <input type="checkbox" name="reward-checkbox" id="Reward History" />
-            <p>stETH rewarded</p>
+            <p>sAQUA rewarded</p>
           </div>
           <div className="reward-history-checkmark-div">
             <input type="checkbox" name="reward-checkbox" id="Reward History" />

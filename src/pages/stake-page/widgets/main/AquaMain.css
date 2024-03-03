@@ -40,17 +40,22 @@
 .Aqua-stake-main-claim-toggle,
 .Aqua-stake-main-request-toggle {
   font-size: 15px;
-  padding: 40px auto;
+  padding: 10px 30px;
   border-radius: 20px;
-  width: 150px;
-  height: 30px;
+  /* width: 150px; */
+  /* height: 30px; */
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
+ 
 }
 
 .Aqua-stake-main-claim-toggle {
+  padding: auto 30px;
+}
+
+.Aqua-stake-main-request-toggle{
   padding: auto 30px;
 }
 .toggle-active {

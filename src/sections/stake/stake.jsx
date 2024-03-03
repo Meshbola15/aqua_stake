@@ -2,6 +2,7 @@ import React from "react";
 import "./stake.css";
 import ethlogo from "../../assets/eth-logo.svg";
 import polygon from "../../assets/polygon-logo.svg";
+import { Link } from "react-router-dom";
 
 const Stake = () => {
   return (
@@ -16,15 +17,18 @@ const Stake = () => {
           <h2>Variable</h2>
           <p>APR</p>
 
-          <a href="#">Stake now</a>
+          <Link to="/page/stake">Stake now</Link>
         </div>
         <div>
           <img src={polygon} alt="" />
 
           <h2>Coming Soon!</h2>
-          <div className="spacer"/>
+          {/* <div className="spacer"/> */}
+          <p>
+            <br />
+          </p>
 
-          <a href="#">Stake now</a>
+          <Link to="/page/stake">Stake now</Link>
         </div>
       </section>
     </div>

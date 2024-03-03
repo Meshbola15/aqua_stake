@@ -3,7 +3,7 @@ import "./community.css";
 
 import { FaXTwitter } from "react-icons/fa6";
 import { BiLogoTelegram } from "react-icons/bi";
-import { FiSearch } from "react-icons/fi";
+import { RiSearch2Line } from "react-icons/ri";
 import { FaBloggerB } from "react-icons/fa6";
 import { HiMiniChatBubbleLeftRight } from "react-icons/hi2";
 import { PiGithubLogoFill } from "react-icons/pi";
@@ -60,7 +60,7 @@ const Community = () => {
           linkSubText="Follow us"
         />
         <SocialLinks
-          icon={<FiSearch size={IconSize} color={IconColor} />}
+          icon={<RiSearch2Line size={IconSize} color={IconColor} />}
           link="#"
           linkTitle="Research Forum"
           linkSubText="Join discussions"

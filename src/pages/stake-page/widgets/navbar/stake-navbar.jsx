@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 import { MdMenu } from "react-icons/md";
 
 const AquaNavbar = () => {
-  const [isMenuActive, setisMenuActive] = useState(false);
+  const [isMenuActive, setisMenuActive] = useState(true);
   return (
     <div className="aqua-stake-navbar-container">
       <div className="aqua-stake-navbar-container-right">
@@ -23,7 +23,7 @@ const AquaNavbar = () => {
       <nav
         className={`aqua-stake-navbar-nav ${isMenuActive && "stake-navbar"}`}
       >
-        <ul>
+        <ul className={`${!isMenuActive && "navbar-nav-list"}`}>
           <Link to="stake">
             <HiSquare3Stack3D />
             <p>Stake</p>

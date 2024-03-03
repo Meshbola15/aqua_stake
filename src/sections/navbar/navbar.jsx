@@ -3,8 +3,6 @@ import { IoIosArrowRoundForward } from "react-icons/io";
 import logo from "../../assets/nav-logo.svg";
 import { MdMenu } from "react-icons/md";
 import "./navbar.css";
-// import { HashLink } from "react-router-dom";
-
 import { MdOutlineClose } from "react-icons/md";
 import { HashLink } from "react-router-hash-link";
 
@@ -14,8 +12,6 @@ const NavbarLinkItems = ({ path, name }) => {
       <HashLink
         scroll={(el) => el.scrollIntoView({ behavior: "smooth" })}
         to={`/#${path}`}
-        // activeClassName="selected"
-        // activeStyle={{ color: "#ff61d1" }}
         className="navbar-item-link"
       >
         {name}

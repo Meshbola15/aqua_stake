@@ -1,7 +1,6 @@
 .nav-section {
   width: 100%;
-  padding: var(--body-padding);
-  padding-top: 20px;
+  padding: 2rem 10vw;
 }
 
 .nav-section ul {
@@ -69,7 +68,8 @@
 
 @media screen and (max-width: 768px) {
   .nav-section {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    /* padding: 2rem 10vw 2rem 10vw; */
   }
 }
 @media screen and (max-width: 1035px) {
@@ -77,7 +77,7 @@
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    padding: var(--body-padding);
+    padding: 2rem 10vw 2rem 10vw;
   }
 
   .menu-btn {

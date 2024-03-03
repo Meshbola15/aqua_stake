@@ -99,11 +99,11 @@
   .aqua-stake-navbar-container-right {
     align-items: flex-start;
   }
+  
   .aqua-stake-navbar-nav ul {
     flex-direction: column;
     align-items: flex-end;
     justify-content: flex-end;
-    /* padd-top: 20px; */
   }
 
   .aqua-stake-navbar-menu {
@@ -149,5 +149,9 @@
 
   .stake-menu {
     display: block;
+  }
+
+  .navbar-nav-list{
+    display: none;
   }
 }

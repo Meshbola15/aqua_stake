@@ -110,12 +110,12 @@ const AquaWithdrawal = () => {
             {/* ////////////////////////////////////////// */}
             <div className="aqua-withdrawal-main-card-box">
               <article className="aqua-withdrawal-main-card-box-container ">
-                <h4>Use Aggregators</h4>
-                <img src={aggregator} alt="" className="aggre-logo" />
+                <h4>Use ParaSwap</h4>
+                <img src={paraSwap} alt="Para Swap Logo" className="aggre-logo" />
               </article>
               <article className="aqua-withdrawal-main-card-box-container">
                 <p>Best Rate:</p>
-                <p>1 : 1.0003</p>
+                <p>1 : 1.09</p>
               </article>
               <article className="aqua-withdrawal-main-card-box-container">
                 <p>Waiting Time:</p>
@@ -131,8 +131,8 @@ const AquaWithdrawal = () => {
           ) : (
             <section className="">
               <LinkCard name="Para Swap" image={paraSwap} />
-              <LinkCard name="Cow Swap" image={cowSwap} />
-              <LinkCard name="linch" image={linch} />
+              {/* <LinkCard name="Cow Swap" image={cowSwap} />
+              <LinkCard name="linch" image={linch} /> */}
             </section>
           )}
         </section>

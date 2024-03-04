@@ -9,7 +9,7 @@
   background-color: var(--main-stake-body-background);
   padding: 30px 30px;
   border-radius: 20px;
-  min-height: 100vh;
+  /* min-height: 100vh; */
 }
 
 .aqua-withdrawal-main-input-container {
@@ -190,9 +190,7 @@ input::-webkit-inner-spin-button {
   width: 20px;
 }
 
-.aggre-logo{
-  width: 50px;
-}
+
 
 
 @media screen and (max-width: 768px) {

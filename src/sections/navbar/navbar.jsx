@@ -42,8 +42,8 @@ const Navbar = () => {
           <NavbarLinkItems path="audit" name="Audit" />
 
           <NavbarLinkItems path="community" name="Community" />
-          <HashLink to="" id="nav-section-btn">
-            Join Telegram
+          <HashLink to="/page/stake\" id="nav-section-btn">
+            Stake Now
             <IoIosArrowRoundForward size={20} />
           </HashLink>
         </ul>

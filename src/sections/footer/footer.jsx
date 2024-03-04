@@ -12,10 +12,7 @@ const Footer = () => {
             <h2>AQUA STAKE</h2>
           </div>
 
-          <p>
-            Stake your ETH in our vaults and start earning rewards through the
-            validators that are associated with them.
-          </p>
+          <p>Stake your AQUA and start earning uncapped rewards</p>
         </section>
 
         <section className="footer-link-section">
@@ -90,13 +87,11 @@ const Footer = () => {
       <section className="footer-bottom-section">
         <hr />
         <section className="footer-bottom">
-        <p>Copyright © 2024 AQUASTAKE</p>
-        <div>
-          <a href="#">Terms of Use</a>
-         |
-          <a href="#">Privacy Policy</a>
-        </div>
-      </section>
+          <p>Copyright © 2024 AQUASTAKE</p>
+          <div>
+            <a href="#">Terms of Use</a>|<a href="#">Privacy Policy</a>
+          </div>
+        </section>
       </section>
     </section>
   );

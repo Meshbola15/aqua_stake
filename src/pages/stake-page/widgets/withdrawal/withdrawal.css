@@ -72,11 +72,11 @@ input::-webkit-inner-spin-button {
   margin: 10px 20px;
 }
 
-.aqua-withdrawal-header-text-container{
+.aqua-withdrawal-header-text-container {
   margin-bottom: 40px;
 }
 
-.aqua-withdrawal-header-text-container h2{
+.aqua-withdrawal-header-text-container h2 {
   font-weight: 500;
   font-size: 20px;
 }
@@ -186,38 +186,31 @@ input::-webkit-inner-spin-button {
   gap: 5px;
 }
 
-.aqua-logo{
-  width: 20px;
-}
-
-
-
-
 @media screen and (max-width: 768px) {
-  .aqua-withdrawal-main-card-container{
+  .aqua-withdrawal-main-card-container {
     display: flex;
     flex-direction: column;
     margin-bottom: 50px;
   }
 
-  .aqua-withdrawal-main-input-logo{
+  .aqua-withdrawal-main-input-logo {
     padding-left: 20px;
     padding-right: 10px;
   }
-  .aqua-withdrawal-main-input-logo img{
+  .aqua-withdrawal-main-input-logo img {
     width: 15px;
     margin-right: 8px;
   }
 
-  .aqua-withdrawal-main-input-logo svg{
+  .aqua-withdrawal-main-input-logo svg {
     font-size: 20px;
   }
 
-  .aqua-withdrawal-main-card-box-container h4{
+  .aqua-withdrawal-main-card-box-container h4 {
     font-size: 12px;
   }
 
- .aqua-withdrawal-main-card-box-container p{
-  font-size: 10px;
- } 
+  .aqua-withdrawal-main-card-box-container p {
+    font-size: 10px;
+  }
 }

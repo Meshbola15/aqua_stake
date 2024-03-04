@@ -42,7 +42,7 @@ const Navbar = () => {
           <NavbarLinkItems path="audit" name="Audit" />
 
           <NavbarLinkItems path="community" name="Community" />
-          <HashLink to="/page/stake\" id="nav-section-btn">
+          <HashLink to="/page/stake" id="nav-section-btn">
             Stake Now
             <IoIosArrowRoundForward size={20} />
           </HashLink>

@@ -98,6 +98,7 @@ input::-webkit-inner-spin-button {
   padding: 20px;
   border-radius: 20px;
   background-color: var(--main-stake-input-background);
+  /* width: 250px; */
 }
 
 .aqua-withdrawal-main-card-box-container {
@@ -156,12 +157,13 @@ input::-webkit-inner-spin-button {
 
 .aqua-withdrawal-link-card-container {
   background-color: var(--main-stake-input-background);
-  margin: 10px 0;
+  /* margin: 10px 0; */
   padding: 15px 20px;
   border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-top: 70px;
 }
 
 .aqua-withdrawal-link-card-image-details {

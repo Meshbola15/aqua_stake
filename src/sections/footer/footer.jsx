@@ -24,19 +24,17 @@ const Footer = () => {
               <a href="#">Networks</a>
             </li>
             <li>
-              <a href="#">Node operators</a>
+              <a href="#">About</a>
             </li>
             <li>
-              <a href="#">Governance</a>
+              <a href="#">DAO</a>
             </li>
+
             <li>
-              <a href="#">Analytics</a>
+              <a href="#">Audit</a>
             </li>
             <li>
               <a href="#">Coummunity</a>
-            </li>
-            <li>
-              <a href="#">About</a>
             </li>
           </ul>
 

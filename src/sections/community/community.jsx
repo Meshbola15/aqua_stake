@@ -29,8 +29,8 @@ const Community = () => {
       <section className="community-email-container">
         <h3>Join our Community</h3>
         <p>
-          Learn more about Aqua Stake, chat with us and have your <br /> say in
-          the future of the Lido ecosystem
+          Learn more about Aqua Stake, chat with us and have your say in
+          the future of the Aqua ecosystem
         </p>
 
         <form action="submit" className="community-email">
@@ -58,12 +58,6 @@ const Community = () => {
           link="#"
           linkTitle="Twitter"
           linkSubText="Follow us"
-        />
-        <SocialLinks
-          icon={<RiSearch2Line size={IconSize} color={IconColor} />}
-          link="#"
-          linkTitle="Research Forum"
-          linkSubText="Join discussions"
         />
         <SocialLinks
           icon={<PiGithubLogoFill size={IconSize} color={IconColor} />}

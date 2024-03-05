@@ -9,9 +9,17 @@
   --main-body-padding:  4rem 30vw;
 }
 
-@media screen and (max-width: 767px) {
+
+@media screen and (max-width: 1032px) {
   #root{
-    --main-body-padding:  4rem 10vw;
+    --main-boby-padding: 4rem 20vw
+  }
+  
+}
+
+@media screen and (max-width: 900px) {
+  #root{
+    --main-body-padding:  2rem 10vw;
   }
 }
 

@@ -42,7 +42,7 @@
   align-items: center;
   gap: 5px;
   margin-right: 30px;
-  font-size: 15px;
+  font-size: 12px;
   text-decoration: none;
   color: var(--white);
 }
@@ -91,7 +91,7 @@
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 900px) {
   .aqua-stake-navbar-container {
     align-items: flex-start;
   }
@@ -121,10 +121,10 @@
   }
 
   .aqua-stake-navbar-nav ul a {
-    font-size: 12px;
+    font-size: 10px;
     margin-right: 0px;
     margin-top: 10px;
-    /* align-items: ; */
+    /* align-items: flex-start; */
   }
 
   .aqua-stake-navbar-logo-container p {

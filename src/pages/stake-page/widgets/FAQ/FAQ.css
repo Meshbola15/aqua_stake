@@ -1,0 +1,67 @@
+.stake-faq-maim-section {
+  padding: 4rem 10vw;
+}
+
+.stake-faq-maim-section article {
+  color: var(--white);
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.stake-faq-maim-section article h2 {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.stake-faq-maim-section article p {
+  font-size: 15px;
+}
+
+.stake-faq-img-container-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 60px;
+}
+
+.stake-faq-img-container-section img {
+  width: 25vw;
+}
+
+@media screen and (max-width: 1032px) {
+  .stake-faq-maim-section {
+    padding: 2rem 10vw;
+  }
+
+  .stake-faq-maim-section article h2 {
+    font-size: 20px;
+  }
+
+  .stake-faq-maim-section article p {
+    font-size: 12px;
+  }
+
+  .stake-faq-img-container-section {
+    gap: 30px;
+  }
+
+  .stake-faq-img-container-section img {
+    width: 50vw;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .stake-faq-img-container-section img {
+    width: 100%;
+  }
+
+  .stake-faq-maim-section article h2 {
+    font-size: 15px;
+  }
+
+  .stake-faq-maim-section article p {
+    font-size: 10px;
+  }
+
+}

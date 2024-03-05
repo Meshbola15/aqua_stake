@@ -6,6 +6,7 @@ import AquaFooter from "./stake-page/widgets/footer/stakeFooter";
 import AquaRewards from "./stake-page/widgets/rewards/rewards";
 import { Routes, Route } from "react-router-dom";
 import AquaWithdrawal from "./stake-page/widgets/withdrawal/withdrawal";
+import FAQ from "./stake-page/widgets/FAQ/FAQ";
 const StakeHome = () => {
   return (
     <div className="stake-home">
@@ -13,7 +14,8 @@ const StakeHome = () => {
       <Routes>
         <Route path="stake" element={<AquaMain />} />
         <Route path="withdrawals" element={<AquaWithdrawal />} />
-        <Route path="wrap" element={<AquaRewards />} />
+        <Route path="reward" element={<AquaRewards />} />
+        <Route path="faq" element={<FAQ />} />
       </Routes>
       <AquaFooter />
     </div>

@@ -3,6 +3,7 @@ import { BiSolidPackage } from "react-icons/bi";
 import { MdOutlineClose } from "react-icons/md";
 import { HiSquare3Stack3D } from "react-icons/hi2";
 import { FaMoneyCheckDollar } from "react-icons/fa6";
+import { FaQuestionCircle } from "react-icons/fa";
 import "./stake-navbar.css";
 import navlogo from "../../../../assets/logo-big.svg";
 import { Link } from "react-router-dom";
@@ -28,13 +29,17 @@ const AquaNavbar = () => {
             <HiSquare3Stack3D />
             <p>Stake</p>
           </Link>
-          <Link to="wrap">
+          <Link to="reward">
             <BiSolidPackage />
             <p>Rewards</p>
           </Link>
           <Link to="withdrawals">
             <FaMoneyCheckDollar />
             <p>Withdrawals</p>
+          </Link>
+          <Link to="faq">
+            <FaQuestionCircle />
+            <p>FAQ</p>
           </Link>
           <Link to="#" className="aqua-stake-navbar-connect-btn-mobile">
             Connect wallet

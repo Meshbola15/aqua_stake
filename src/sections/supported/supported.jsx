@@ -23,10 +23,12 @@ const Supported = () => {
       <section className="supported-card-section">
         {/* First container */}
         <div className="supported-card">
-          <img src={eth} alt="Etheruem" />
+          <section>
+            <img src={eth} alt="Etheruem" />
 
-          <h4>Ethereum</h4>
-          <p>Stake your AQUA, get daily rewards and received sAQUA</p>
+            <h4>Ethereum</h4>
+            <p>Stake your AQUA, get daily rewards and received sAQUA</p>
+          </section>
 
           <section className="supported-card-variable">
             <article>
@@ -53,10 +55,11 @@ const Supported = () => {
 
         <div className="supported-card card-dark">
           <img src={polygon} alt="polygon" />
+          <>
+            <h4>Polygon</h4>
 
-          <h4>Polygon</h4>
-
-          <h3 className="supported-soon">Coming Soon!</h3>
+            <h3 className="supported-soon">Coming Soon!</h3>
+          </>
 
           <section className="supported-btn">
             <Link to="#">Learn more</Link>

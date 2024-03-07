@@ -20,8 +20,7 @@ const DAO = () => {
 
           <h3>Governance Process</h3>
           <p>
-            Explore how the decisions in Aqua Stake governance processes are
-            made.
+          $AQUA holders are key to the decision making process of Aquastake
           </p>
         </div>
 

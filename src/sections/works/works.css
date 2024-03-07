@@ -44,6 +44,7 @@
 .second::after,
 .second::before {
   content: "";
+  /* width: calc(20vw - 6.6vw); */
   width: 18vw;
   height: 2px;
   position: absolute;

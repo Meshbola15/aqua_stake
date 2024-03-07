@@ -55,6 +55,7 @@
   color: var(--white);
   font-size: var(--sm-font-size);
   max-width: 350px;
+  font-size: 12px;
 }
 
 .doa-coming-section {
@@ -124,6 +125,7 @@
   .doa-card-dark p {
     width: auto;
     text-wrap: wrap;
+    /* font-size: 10px; */
   }
 
   .doa-card-dark img {

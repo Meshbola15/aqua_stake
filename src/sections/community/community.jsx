@@ -3,14 +3,13 @@ import "./community.css";
 
 import { FaXTwitter } from "react-icons/fa6";
 import { BiLogoTelegram } from "react-icons/bi";
-import { RiSearch2Line } from "react-icons/ri";
 import { FaBloggerB } from "react-icons/fa6";
 import { HiMiniChatBubbleLeftRight } from "react-icons/hi2";
-import { PiGithubLogoFill } from "react-icons/pi";
+import { SiGitbook } from "react-icons/si";
 
 const SocialLinks = ({ link, icon, linkTitle, linkSubText }) => {
   return (
-    <a href={link} className="social-links">
+    <a href={link} target="_blank" className="social-links">
       <div className="social-icon-container">{icon}</div>
       <div className="social-link-text">
         <h2>{linkTitle}</h2>
@@ -29,8 +28,8 @@ const Community = () => {
       <section className="community-email-container">
         <h3>Join our Community</h3>
         <p>
-          Learn more about Aqua Stake, chat with us and have your say in
-          the future of the Aqua ecosystem
+          Learn more about Aqua Stake, chat with us and have your say in the
+          future of the Aqua ecosystem
         </p>
 
         <form action="submit" className="community-email">
@@ -49,27 +48,21 @@ const Community = () => {
       <section className="community-social-container">
         <SocialLinks
           icon={<BiLogoTelegram size={IconSize} color={IconColor} />}
-          link="#"
+          link="https://t.me/aquastakeportal"
           linkTitle="Telegram"
           linkSubText="Join Chat"
         />
         <SocialLinks
           icon={<FaXTwitter size={IconSize} color={IconColor} />}
-          link="#"
+          link="https://twitter.com/Aqua_Stake"
           linkTitle="Twitter"
           linkSubText="Follow us"
         />
         <SocialLinks
-          icon={<PiGithubLogoFill size={IconSize} color={IconColor} />}
-          link="#"
-          linkTitle="Github"
+          icon={<SiGitbook size={IconSize} color={IconColor} />}
+          link="https://aqua-stake.gitbook.io/aquastake/"
+          linkTitle="Git Book"
           linkSubText="Contribute"
-        />
-        <SocialLinks
-          icon={<FaBloggerB size={IconSize} color={IconColor} />}
-          link="#"
-          linkTitle="Blog"
-          linkSubText="Learn about Aqua Stake"
         />
         <SocialLinks
           icon={<HiMiniChatBubbleLeftRight size={IconSize} color={IconColor} />}

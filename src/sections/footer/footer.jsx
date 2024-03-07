@@ -1,6 +1,7 @@
 import React from "react";
 import "./footer.css";
 import logo from "../../assets/logo-big.svg";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -61,23 +62,32 @@ const Footer = () => {
             <li>
               <p>Community</p>
             </li>
+
             <li>
-              <a href="#">Discord</a>
+              <a href="https://t.me/aquastakeportal" target="_blank">
+                Telegram
+              </a>
             </li>
             <li>
-              <a href="#">Telegram</a>
+              <a href="https://twitter.com/Aqua_Stake" target="_blank">
+                Twitter
+              </a>
             </li>
             <li>
-              <a href="#">Twitter</a>
+              <a
+                href="https://aqua-stake.gitbook.io/aquastake/"
+                target="_blank"
+              >
+                Git book
+              </a>
             </li>
             <li>
-              <a href="#">Github</a>
+              <a href="#" target="_blank">
+                Medium
+              </a>
             </li>
             <li>
-              <a href="#">Reddit</a>
-            </li>
-            <li>
-              <a href="#">Medium</a>
+              <Link to="/page/faq">FAQ</Link>
             </li>
           </ul>
         </section>

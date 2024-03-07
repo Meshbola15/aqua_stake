@@ -28,7 +28,7 @@
 }
 .supported-card-section {
   display: flex;
-  align-items: center;
+  align-items: stretch;
   /* grid-template-columns: minmax(); */
   flex-wrap: wrap;
   gap: 20px;
@@ -39,7 +39,11 @@
   border-radius: 10px;
   padding: 30px 30px;
   text-align: center;
+  justify-content: space-between;
   flex: 1;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   /* height: 300px; */
 }
 
@@ -68,6 +72,7 @@
   background-color: #cfcfcf;
   height: 30px;
   width: 2px;
+  margin: 0 30px;
 }
 
 #variable-coloured {
@@ -84,6 +89,7 @@
   align-items: center;
   justify-content: space-between;
   gap: 10px;
+  flex-wrap: wrap;
 }
 
 .supported-btn a {
@@ -108,9 +114,10 @@
 }
 
 .supported-soon {
-  margin: 60px 0;
+  /* margin: 60px 0; */
   font-size: 30px;
   font-weight: 600;
+  align-self: center;
 }
 
 @media screen and (max-width: 768px) {

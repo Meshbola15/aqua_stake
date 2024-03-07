@@ -3,7 +3,7 @@ import "./community.css";
 
 import { FaXTwitter } from "react-icons/fa6";
 import { BiLogoTelegram } from "react-icons/bi";
-import { FaBloggerB } from "react-icons/fa6";
+import { FaMedium } from "react-icons/fa6";
 import { HiMiniChatBubbleLeftRight } from "react-icons/hi2";
 import { SiGitbook } from "react-icons/si";
 
@@ -63,6 +63,12 @@ const Community = () => {
           link="https://aqua-stake.gitbook.io/aquastake/"
           linkTitle="Git Book"
           linkSubText="Contribute"
+        />
+        <SocialLinks
+          icon={<FaMedium size={IconSize} color={IconColor} />}
+          link="#"
+          linkTitle="Medium"
+          linkSubText="Learn More"
         />
         <SocialLinks
           icon={<HiMiniChatBubbleLeftRight size={IconSize} color={IconColor} />}

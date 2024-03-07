@@ -2,6 +2,21 @@ import React from "react";
 import "./footer.css";
 import logo from "../../assets/logo-big.svg";
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
+
+const SectionLink = ({ path, name }) => {
+  return (
+    <li className="sectionLink">
+      <HashLink
+        scroll={(el) => el.scrollIntoView({ behavior: "smooth" })}
+        to={`/#${path}`}
+        className="navbar-item-link"
+      >
+        {name}
+      </HashLink>
+    </li>
+  );
+};
 
 const Footer = () => {
   return (
@@ -21,22 +36,15 @@ const Footer = () => {
             <li>
               <p>Menu</p>
             </li>
-            <li>
-              <a href="#">Networks</a>
-            </li>
-            <li>
-              <a href="#">About</a>
-            </li>
-            <li>
-              <a href="#">DAO</a>
-            </li>
+            <SectionLink name="Networks" path="network" />
 
-            <li>
-              <a href="#">Audit</a>
-            </li>
-            <li>
-              <a href="#">Coummunity</a>
-            </li>
+            <SectionLink name="About" path="about" />
+
+            <SectionLink name="DAO" path="dao" />
+
+            <SectionLink name="Audit" path="audit" />
+
+            <SectionLink name="Community" path="community" />
           </ul>
 
           {/* ////////////////////// */}
@@ -45,15 +53,12 @@ const Footer = () => {
             <li>
               <p>Networks</p>
             </li>
-            <li>
-              <a href="#">Etheruem</a>
-            </li>
-            <li>
-              <a href="#">polygon</a>
-            </li>
-            <li>
-              <a href="#">Solana</a>
-            </li>
+
+            <SectionLink name="Etheruem" path="network" />
+
+            <SectionLink name="polygon" path="network" />
+
+            <SectionLink name="Solana" path="network" />
           </ul>
 
           {/* //////////////////// */}

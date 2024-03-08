@@ -113,6 +113,21 @@ const connectWalletInfo = [
   },
 ];
 
+const donateETH = [
+  {
+    title: "Annual percentage rate",
+    subTitle: "NAN",
+  },
+  {
+    title: "Total ETH deposited",
+    subTitle: "NAN ETH",
+  },
+  {
+    title: "Total contributors",
+    subTitle: "NAN",
+  },
+];
+
 const stakeStateData = [
   {
     title: "Annual percentage rate",
@@ -166,4 +181,12 @@ const transferData = [
   },
 ];
 
-export { withdrawalData, stakeData, connectWalletInfo, stakeStateData, withdrawalFaqData, transferData };
+export {
+  withdrawalData,
+  donateETH,
+  stakeData,
+  connectWalletInfo,
+  stakeStateData,
+  withdrawalFaqData,
+  transferData,
+};

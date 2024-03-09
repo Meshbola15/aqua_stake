@@ -13,7 +13,7 @@ const Main = () => {
 
         <p>Easy and Uncapped staking</p>
 
-        <Link to="/stake/stake" className="main-btn">
+        <Link to="/stake/main" className="main-btn">
           Stake now
         </Link>
       </div>

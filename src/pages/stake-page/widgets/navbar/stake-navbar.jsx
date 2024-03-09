@@ -26,7 +26,7 @@ const AquaNavbar = () => {
         className={`aqua-stake-navbar-nav ${isMenuActive && "stake-navbar"}`}
       >
         <ul className={`${!isMenuActive && "navbar-nav-list"}`}>
-          <Link to="stake">
+          <Link to="main">
             <HiSquare3Stack3D />
             <p>Stake</p>
           </Link>
@@ -42,9 +42,9 @@ const AquaNavbar = () => {
             <FaQuestionCircle />
             <p>FAQ</p>
           </Link>
-          <Link to="donate">
+          <Link to="pools">
             <BiSolidDonateHeart />
-            <p>Donate</p>
+            <p>Pools</p>
           </Link>
           <Link to="#" className="aqua-stake-navbar-connect-btn-mobile">
             Connect wallet

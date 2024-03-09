@@ -112,6 +112,9 @@ input::-webkit-inner-spin-button {
   margin-bottom: 30px;
 }
 
+.aqua-withdrawal-main-card-box-container img{
+  width: 30px;
+}
 .aqua-withdrawal-stake-price-container {
   width: 100%;
   margin: 20px 0;
@@ -214,5 +217,8 @@ input::-webkit-inner-spin-button {
 
   .aqua-withdrawal-main-card-box-container p {
     font-size: 10px;
+  }
+  .aqua-withdrawal-main-card-box-container img{
+    width: 20px;
   }
 }

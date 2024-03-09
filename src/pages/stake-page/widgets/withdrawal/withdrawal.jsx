@@ -111,7 +111,7 @@ const AquaWithdrawal = () => {
             <div className="aqua-withdrawal-main-card-box">
               <article className="aqua-withdrawal-main-card-box-container ">
                 <h4>Use ParaSwap</h4>
-                <img src={paraSwap} alt="Para Swap Logo" className="aggre-logo" />
+                <img src={paraSwap} alt="Para Swap Logo" />
               </article>
               <article className="aqua-withdrawal-main-card-box-container">
                 <p>Best Rate:</p>

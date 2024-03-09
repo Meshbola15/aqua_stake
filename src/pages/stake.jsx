@@ -13,11 +13,11 @@ const StakeHome = () => {
     <div className="stake-home">
       <AquaNavbar />
       <Routes>
-        <Route path="stake" element={<AquaMain />} />
+        <Route path="main" element={<AquaMain />} />
         <Route path="withdrawals" element={<AquaWithdrawal />} />
         <Route path="reward" element={<AquaRewards />} />
         <Route path="faq" element={<FAQ />} />
-        <Route path="donate" element={<Donate />} />
+        <Route path="pools" element={<Donate />} />
       </Routes>
       <AquaFooter />
     </div>

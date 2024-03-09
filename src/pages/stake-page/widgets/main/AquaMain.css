@@ -48,14 +48,13 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
- 
 }
 
 .Aqua-stake-main-claim-toggle {
   padding: auto 30px;
 }
 
-.Aqua-stake-main-request-toggle{
+.Aqua-stake-main-request-toggle {
   padding: auto 30px;
 }
 .toggle-active {
@@ -88,7 +87,8 @@
   background-color: var(--main-stake-input-background);
   outline: none;
 }
-.aqua-connect-wallet-connect-btn, .aqua-connect-claim-container button {
+.aqua-connect-wallet-connect-btn,
+.aqua-connect-claim-container button {
   width: 100%;
   padding: 10px 0;
   margin-top: 10px;
@@ -174,7 +174,7 @@
   font-size: 12px;
 }
 
-.aqua-stake-faq-card-text-container  p {
+.aqua-stake-faq-card-text-container p {
   margin-top: 20px;
   font-weight: 400;
   color: var(--white);
@@ -232,6 +232,7 @@
 
   .aqua-stake-stats-header-text-section h3 {
     font-size: 14px;
+    font-weight: 500;
   }
 
   .aqua-stake-stats-header-text-section a {

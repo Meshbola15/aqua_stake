@@ -113,6 +113,25 @@ const connectWalletInfo = [
   },
 ];
 
+const donateETHInfo = [
+  {
+    title: "You will receive",
+    subTitle: "0 sAQUA",
+  },
+  {
+    title: "Exchange rate",
+    subTitle: "1 ETH = 1 sAQUA",
+  },
+  {
+    title: "Max transaction cost",
+    subTitle: "NAN", // Assuming "N/A" represents not applicable
+  },
+  {
+    title: "Reward fee",
+    subTitle: "Variable",
+  },
+];
+
 const donateETH = [
   {
     title: "Annual percentage rate",
@@ -189,4 +208,5 @@ export {
   stakeStateData,
   withdrawalFaqData,
   transferData,
+  donateETHInfo,
 };

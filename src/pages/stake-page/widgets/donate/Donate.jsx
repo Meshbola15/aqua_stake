@@ -1,6 +1,6 @@
 import React from "react";
 import "../main/AquaMain.css";
-import { connectWalletInfo, donateETH, stakeData } from "../../../../data/data";
+import { donateETH, donateETHInfo, stakeData } from "../../../../data/data";
 import FaqCard from "../../FaqCard/FAqCard";
 
 const Donate = () => {
@@ -19,7 +19,7 @@ const Donate = () => {
           </button>
         </form>
         <article className="aqua-connect-wallect-price-info">
-          {connectWalletInfo.map((item, index) => (
+          {donateETHInfo.map((item, index) => (
             <div key={index} className="aqua-connect-wallect-price-info-text">
               <p>{item.title}</p>
               <p>{item.subTitle}</p>

@@ -92,7 +92,7 @@ const Footer = () => {
               </a>
             </li>
             <li>
-              <Link to="/page/faq">FAQ</Link>
+              <Link to="/stake/faq">FAQ</Link>
             </li>
           </ul>
         </section>

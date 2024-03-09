@@ -7,7 +7,7 @@ function App() {
   return (
     <Routes>
       <Route path="*" element={<Home />} children />
-      <Route path="/page/*" element={<StakeHome />} />
+      <Route path="/stake/*" element={<StakeHome />} />
     </Routes>
   );
 }

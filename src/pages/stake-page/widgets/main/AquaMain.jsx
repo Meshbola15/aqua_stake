@@ -7,20 +7,6 @@ import {
   stakeData,
 } from "../../../../data/data";
 
-const Claim = () => {
-  return (
-    <div className="aqua-connect-wallet-container">
-      <section className="aqua-connect-claim-container">
-        <h4>Connect wallet to see your withdrawal requests</h4>
-        <button>Connect Wallet</button>
-        <article>
-          <p>Max transaction cost</p>
-          <p>NaN</p>
-        </article>
-      </section>
-    </div>
-  );
-};
 
 const Request = () => {
   return (
@@ -64,8 +50,8 @@ const Request = () => {
   );
 };
 
+
 const AquaMain = () => {
-  const [isMainActive, setIsMainActive] = useState(false);
   return (
     <div className="aqua-stake-main-container">
       <div className="aqua-stake-main-header-texts">
@@ -73,26 +59,7 @@ const AquaMain = () => {
         <p>Stake AQUA and receive sAQUA.</p>
       </div>
 
-      <div className="aqua-stake-main-toggle">
-        <div
-          onClick={() => setIsMainActive(!isMainActive)}
-          className={`Aqua-stake-main-request-toggle ${
-            isMainActive ? "" : "toggle-active"
-          }`}
-        >
-          <p>Request</p>
-        </div>
-        <div
-          onClick={() => setIsMainActive(!isMainActive)}
-          className={`Aqua-stake-main-claim-toggle  ${
-            isMainActive ? "toggle-active" : ""
-          }`}
-        >
-          Claim
-        </div>
-      </div>
-
-      {isMainActive ? <Claim /> : <Request />}
+      <Request />
 
       {/* end of aqua stake-stats-container */}
 

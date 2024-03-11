@@ -6,13 +6,15 @@ import logoBear from "../../../../assets/logo-big.svg";
 import { IoMdArrowDropdown } from "react-icons/io";
 import aquaLogo from "../../../../assets/logo-bg-white.svg";
 import paraSwap from "../../../../assets/para-swap.svg";
-import cowSwap from "../../../../assets/aggre-logo.svg";
-import aggregator from "../../../../assets/aggregator.svg";
-import linch from "../../../../assets/linch.svg";
 import { RxDash } from "react-icons/rx";
 import { FiExternalLink } from "react-icons/fi";
 import FaqCard from "../../FaqCard/FAqCard";
-import { withdrawalFaqData, withdrawalData } from "../../../../data/data";
+import {
+  withdrawalFaqData,
+  withdrawalData,
+  connectWalletInfo,
+  stakeStateData,
+} from "../../../../data/data";
 
 const SectionOne = () => {
   return (
@@ -61,8 +63,85 @@ const LinkCard = ({ image, name }) => {
   );
 };
 
+const Claim = () => {
+  return (
+    <div className="aqua-connect-wallet-container">
+      <section className="aqua-connect-claim-container">
+        <h4>Connect wallet to see your withdrawal requests</h4>
+        <button>Connect Wallet</button>
+        <article>
+          <p>Max transaction cost</p>
+          <p>NaN</p>
+        </article>
+      </section>
+    </div>
+  );
+};
+
+const RequestWIthdrawal = () => {
+  return (
+    <>
+      <div className="aqua-withdrawal-main-input-container">
+        <div className="aqua-withdrawal-main-input-logo">
+          <img src={logoBear} alt="" />
+          <IoMdArrowDropdown />
+        </div>
+        <input
+          type="number"
+          name=""
+          id=""
+          className="aqua-withdrawal-main-input-logo-input"
+        />
+
+        <button className="aqua-withdrawal-main-input-logo-btn">Max</button>
+      </div>
+      <section className="aqua-withdrawal-main-card-container">
+        <div className="aqua-withdrawal-main-card-box">
+          <article className="aqua-withdrawal-main-card-box-container">
+            <h4>Use Aqua</h4>
+            <img src={aquaLogo} alt="" className="aqua-logo" />
+          </article>
+          <article className="aqua-withdrawal-main-card-box-container">
+            <p>Rate:</p>
+            <p>1:1</p>
+          </article>
+          <article className="aqua-withdrawal-main-card-box-container">
+            <p>Waiting Time:</p>
+            <p>~ 1-5 day(s)</p>
+          </article>
+        </div>
+        {/* ////////////////////////////////////////// */}
+        <div className="aqua-withdrawal-main-card-box">
+          <article className="aqua-withdrawal-main-card-box-container ">
+            <h4>Use ParaSwap</h4>
+            <img src={paraSwap} alt="Para Swap Logo" />
+          </article>
+          <article className="aqua-withdrawal-main-card-box-container">
+            <p>Best Rate:</p>
+            <p>1 : 1.09</p>
+          </article>
+          <article className="aqua-withdrawal-main-card-box-container">
+            <p>Waiting Time:</p>
+            <p>~ 1-5 minute(s)</p>
+          </article>
+        </div>
+      </section>
+
+      {/* /////////////////////////////////// */}
+
+      {/* {isSecondActive ? (
+          <SectionOne />
+        ) : ( */}
+      <section className="">
+        <LinkCard name="Para Swap" image={paraSwap} />
+      </section>
+      {/* )} */}
+    </>
+  );
+};
+
 const AquaWithdrawal = () => {
-  const [isSecondActive, setIsSecondActive] = useState(false);
+  const [isMainActive, setIsMainActive] = useState(false);
   return (
     <div className="aqua-main-background">
       <section className="aqua-with-main-content">
@@ -71,70 +150,27 @@ const AquaWithdrawal = () => {
           <p>Initiate sAQUA withdrawals and claim AQUA</p>
         </div>
 
-        <section>
-          <div></div>
-        </section>
+        <div className="aqua-stake-main-toggle">
+          <div
+            onClick={() => setIsMainActive(!isMainActive)}
+            className={`Aqua-stake-main-request-toggle ${
+              isMainActive ? "" : "toggle-active"
+            }`}
+          >
+            <p>Request</p>
+          </div>
+          <div
+            onClick={() => setIsMainActive(!isMainActive)}
+            className={`Aqua-stake-main-claim-toggle  ${
+              isMainActive ? "toggle-active" : ""
+            }`}
+          >
+            Claim
+          </div>
+        </div>
 
         <section className="aqua-withdrawal-main-content-container">
-          <div className="aqua-withdrawal-main-input-container">
-            <div className="aqua-withdrawal-main-input-logo">
-              <img src={logoBear} alt="" />
-              <IoMdArrowDropdown />
-            </div>
-            <input
-              type="number"
-              name=""
-              id=""
-              className="aqua-withdrawal-main-input-logo-input"
-            />
-
-            <button className="aqua-withdrawal-main-input-logo-btn">Max</button>
-          </div>
-
-          {/* /////////////////////////////// */}
-          <section className="aqua-withdrawal-main-card-container">
-            <div className="aqua-withdrawal-main-card-box">
-              <article className="aqua-withdrawal-main-card-box-container">
-                <h4>Use Aqua</h4>
-                <img src={aquaLogo} alt="" className="aqua-logo" />
-              </article>
-              <article className="aqua-withdrawal-main-card-box-container">
-                <p>Rate:</p>
-                <p>1:1</p>
-              </article>
-              <article className="aqua-withdrawal-main-card-box-container">
-                <p>Waiting Time:</p>
-                <p>~ 1-5 day(s)</p>
-              </article>
-            </div>
-            {/* ////////////////////////////////////////// */}
-            <div className="aqua-withdrawal-main-card-box">
-              <article className="aqua-withdrawal-main-card-box-container ">
-                <h4>Use ParaSwap</h4>
-                <img src={paraSwap} alt="Para Swap Logo" />
-              </article>
-              <article className="aqua-withdrawal-main-card-box-container">
-                <p>Best Rate:</p>
-                <p>1 : 1.09</p>
-              </article>
-              <article className="aqua-withdrawal-main-card-box-container">
-                <p>Waiting Time:</p>
-                <p>~ 1-5 minute(s)</p>
-              </article>
-            </div>
-          </section>
-
-          {/* /////////////////////////////////// */}
-
-          {isSecondActive ? (
-            <SectionOne />
-          ) : (
-            <section className="">
-              <LinkCard name="Para Swap" image={paraSwap} />
-              {/* <LinkCard name="Cow Swap" image={cowSwap} />
-              <LinkCard name="linch" image={linch} /> */}
-            </section>
-          )}
+          {isMainActive ? <Claim /> : <RequestWIthdrawal />}
         </section>
         <FaqCard faqData={withdrawalFaqData} />
       </section>

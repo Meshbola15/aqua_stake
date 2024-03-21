@@ -5,19 +5,30 @@ import StakeHome from "./pages/stake";
 import { Route, Routes, useLocation, useNavigate } from "react-router-dom";
 
 const ErrorPage = () => {
-  let navigator = useNavigate();
-  let location = useLocation();
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      navigator("/");
-      console.log(location.pathname);
-    }, 20);
-    return () => clearTimeout(timer);
-  }, []);
+
   return <div>Redirecting....</div>;
 };
 
 function App() {
+
+  const navigator = useNavigate();
+  const location = useLocation();
+
+  const checkRoute = () => {
+    if (location.pathname !== "/") {
+      navigator("/")
+      const expectedRoute = location.pathname.slice(1)
+      const timer = setTimeout(() => {
+        navigator(expectedRoute)
+      }, 20);
+      return () => clearTimeout(timer);
+    }
+  }
+
+  useEffect(() => {
+    checkRoute()
+  }, []);
+
   return (
     <Routes>
       <Route path="*" element={<ErrorPage />} />

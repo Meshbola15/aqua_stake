@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./AquaMain.css";
 import FaqCard from "../../FaqCard/FAqCard";
 import {
@@ -7,10 +7,14 @@ import {
   stakeData,
 } from "../../../../data/data";
 
-
-const Request = () => {
+const AquaMain = () => {
   return (
-    <>
+    <div className="aqua-stake-main-container">
+      <div className="aqua-stake-main-header-texts">
+        <h2>Stake AQUA</h2>
+        <p>Stake AQUA and receive sAQUA.</p>
+      </div>
+
       {/* connect wallet conatiner */}
       <div className="aqua-connect-wallet-container">
         <form className="aqua-connect-wallet-input-container">
@@ -46,22 +50,6 @@ const Request = () => {
           ))}
         </div>
       </div>
-    </>
-  );
-};
-
-
-const AquaMain = () => {
-  return (
-    <div className="aqua-stake-main-container">
-      <div className="aqua-stake-main-header-texts">
-        <h2>Stake AQUA</h2>
-        <p>Stake AQUA and receive sAQUA.</p>
-      </div>
-
-      <Request />
-
-      {/* end of aqua stake-stats-container */}
 
       <FaqCard faqData={stakeData} />
     </div>

@@ -67,6 +67,10 @@
   font-family: "poppins", sans-serif;
 }
 
+.social-links-svg-image{
+  width: 20px;
+}
+
 .community-email-container p:last-of-type {
   margin-top: 10px;
   font-size: 12px;

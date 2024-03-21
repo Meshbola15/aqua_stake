@@ -46,7 +46,7 @@ const Supported = () => {
 
           <section className="supported-btn">
             <Link to="#">Learn more</Link>
-            <Link to="/stake/stake">Stake now</Link>
+            <Link to="/stake/main">Stake now</Link>
           </section>
         </div>
         {/* End of second Container */}
@@ -63,7 +63,7 @@ const Supported = () => {
 
           <section className="supported-btn">
             <Link to="#">Learn more</Link>
-            <Link to="/stake/stake">Stake now</Link>
+            <Link to="/stake/main">Stake now</Link>
           </section>
         </div>
 
@@ -79,7 +79,7 @@ const Supported = () => {
 
           <section className="supported-btn">
             <Link to="#">Learn more</Link>
-            <Link to="/stake/stake">Stake now</Link>
+            <Link to="/stake/main">Stake now</Link>
           </section>
         </div>
 

@@ -6,6 +6,7 @@ import { BiLogoTelegram } from "react-icons/bi";
 import { FaMedium } from "react-icons/fa6";
 import { HiMiniChatBubbleLeftRight } from "react-icons/hi2";
 import { SiGitbook } from "react-icons/si";
+import dex from "../../assets/dextools.svg";
 
 const SocialLinks = ({ link, icon, linkTitle, linkSubText }) => {
   return (
@@ -69,6 +70,12 @@ const Community = () => {
           link="#"
           linkTitle="Medium"
           linkSubText="Learn More"
+        />
+        <SocialLinks
+          icon={<img src={dex} className="social-links-svg-image" />}
+          link="https://www.dextools.io/app/en/ether/pair-explorer/0x94fb70fb1aa99e1ee7675d7ab73bbdd776b901bf?t=1710885293321"
+          linkTitle="DexTools"
+          linkSubText="View Chart"
         />
         <SocialLinks
           icon={<HiMiniChatBubbleLeftRight size={IconSize} color={IconColor} />}

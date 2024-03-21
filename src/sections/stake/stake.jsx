@@ -17,7 +17,7 @@ const Stake = () => {
           <h2>Variable</h2>
           <p>APR</p>
 
-          <Link to="/stake/stake">Stake now</Link>
+          <Link to="/stake/main">Stake now</Link>
         </div>
         <div>
           <img src={polygon} alt="" />
@@ -28,7 +28,7 @@ const Stake = () => {
             <br />
           </p>
 
-          <Link to="/stake/stake">Stake now</Link>
+          <Link to="/stake/main">Stake now</Link>
         </div>
       </section>
     </div>

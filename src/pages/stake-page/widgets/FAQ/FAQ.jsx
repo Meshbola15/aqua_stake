@@ -1,9 +1,9 @@
 import React from "react";
-import FAQ1 from "../../../../assets/FAQ_1.svg";
+import FAQ1 from "../../../../assets/FAQ_1.jpg";
 import FAQ2 from "../../../../assets/FAQ_2.svg";
 import FAQ3 from "../../../../assets/FAQ_3.svg";
-import FAQ4 from "../../../../assets/FAQ_4.svg";
-import FAQ5 from "../../../../assets/FAQ_5.svg";
+import FAQ4 from "../../../../assets/FAQ_4.jpg";
+import FAQ5 from "../../../../assets/FAQ_5.jpg";
 import "./FAQ.css"
 
 const FAQ = () => {

@@ -26,6 +26,15 @@
   margin-top: 10px;
 }
 
+.main-content p div {
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.main-content p div svg {
+  margin-left: 10px;
+}
+
 .main-content a {
   color: var(--white);
   padding: 15px 40px;

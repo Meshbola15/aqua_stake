@@ -54,7 +54,7 @@ const Footer = () => {
               <p>Networks</p>
             </li>
 
-            <SectionLink name="Etheruem" path="network" />
+            <SectionLink name="Ethereum" path="network" />
 
             <SectionLink name="polygon" path="network" />
 
